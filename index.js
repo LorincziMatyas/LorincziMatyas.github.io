@@ -7,6 +7,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	createPageParticles();
 
+	const menuToggle = document.querySelector(".menu-toggle");
+	const navList = document.querySelector(".nav-list");
+
+	// Toggle mobile menu
+	menuToggle.addEventListener("click", function () {
+		navList.classList.toggle("active");
+		menuToggle.classList.toggle("active");
+	});
+
+	// Close menu when clicking on a link
+	const navLinks = document.querySelectorAll(".nav-list a");
+	navLinks.forEach((link) => {
+		link.addEventListener("click", function () {
+			navList.classList.remove("active");
+			menuToggle.classList.remove("active");
+		});
+	});
+
+	// Close menu when clicking outside
+	document.addEventListener("click", function (event) {
+		if (
+			!event.target.closest("nav") &&
+			navList.classList.contains("active")
+		) {
+			navList.classList.remove("active");
+			menuToggle.classList.remove("active");
+		}
+	});
+
 	// Add scroll reveal animation
 	const sections = document.querySelectorAll("section");
 	const observer = new IntersectionObserver(
