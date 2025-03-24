@@ -221,12 +221,12 @@ function createPageParticles() {
 		const posX = Math.random() * 100;
 		const posY = Math.random() * 100;
 		const size = Math.random() * 12 + 1;
-		const duration = Math.random() * 40 + 20; // Longer animation duration
-		const delay = Math.random() * 20;
+		const duration = Math.random() * 20 + 10; // Longer animation duration
+		const delay = Math.random() * 10;
 
 		// Random movement direction and distance
-		const moveX = (Math.random() - 0.5) * 700;
-		const moveY = (Math.random() - 0.5) * 800;
+		const moveX = (Math.random() - 0.5) * 1500;
+		const moveY = (Math.random() - 0.5) * 1500;
 
 		particle.style.left = `${posX}%`;
 		particle.style.top = `${posY}%`;
