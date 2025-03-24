@@ -146,6 +146,22 @@ function createParticles() {
 	}
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+	const fadeElements = document.querySelectorAll(".fade-in");
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("visible");
+				}
+			});
+		},
+		{ threshold: 0.5 }
+	);
+
+	fadeElements.forEach((el) => observer.observe(el));
+});
+
 // Theme toggle functionality
 document.addEventListener("DOMContentLoaded", function () {
 	const themeToggle = document.querySelector(".theme-toggle");
