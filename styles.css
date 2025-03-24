@@ -483,7 +483,7 @@ h2::after {
 }
 
 .timeline-item:hover .timeline-content {
-	transform: rotateX(5deg) rotateY(5deg);
+	transform: rotateX(10deg) rotateY(10deg);
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 

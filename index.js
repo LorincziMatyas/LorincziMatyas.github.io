@@ -206,9 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-// Add this function to your index.js file
-
-// Create particles for the entire page
 function createPageParticles() {
 	const particlesContainer = document.querySelector(".page-particles");
 	const numberOfParticles = 100; // More particles for the full page
