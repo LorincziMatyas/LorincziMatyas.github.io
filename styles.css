@@ -310,9 +310,9 @@ nav {
 	gap: 0.25rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 	.header-content {
-		padding: 15px;
+		padding: 20px !important;
 	}
 	.profile-img {
 		width: 60px;
@@ -344,6 +344,10 @@ nav {
 	}
 	.icon {
 		font-size: 18px;
+	}
+
+	#about {
+		padding: 20px;
 	}
 }
 
@@ -538,7 +542,7 @@ h2::after {
 
 .about-image img {
 	max-width: 100%;
-	border-radius: 12px;
+	border-radius: 80px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	transform: scale(1);
 	transition: transform 0.3s ease-in-out;
@@ -692,10 +696,8 @@ h2::after {
 
 .skills-category {
 	flex: 1;
-	background-color: var(--primary-transparent);
 	padding: 10px;
 	border-radius: 10px;
-	/* min-width: 20%; */
 	transition: transform 0.3s ease;
 }
 
