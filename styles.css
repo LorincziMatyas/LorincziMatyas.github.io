@@ -425,6 +425,12 @@ nav {
 		display: none;
 	}
 
+	.menu-toggle.active {
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+	}
+
 	.menu-toggle.active .bar:nth-child(1) {
 		transform: translateY(8px) rotate(45deg);
 	}
@@ -490,7 +496,7 @@ h2::after {
 
 .about-section {
 	background: #f8f9fa;
-	padding: 80px 0;
+	padding: 80px;
 }
 
 .container {
